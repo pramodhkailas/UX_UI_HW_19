@@ -1,0 +1,471 @@
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.logo {
+  flex-grow: 1;
+  height: 200px;
+}
+
+.nav {
+  flex-grow: 115;
+}
+
+.flex-container>div {
+  background-color: rgb(255, 255, 255);
+  color: rgb(73, 73, 73);
+  margin: 10px;
+  text-align: right;
+  padding-right: 30px;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Below code is for the Read more and Download Buttons*/
+#About_buttons {
+
+  display: flex;
+}
+
+#readmore {
+
+  flex: 3 0 auto;
+  text-align: center;
+
+}
+
+#download {
+
+  flex: 3 0 auto;
+  text-align: center;
+
+}
+
+/* Read more and Download Buttons code ends*/
+.aligncenter {
+  align-self: center;
+  padding-top: 100px;
+  Padding-right: 20px;
+}
+
+.aligncenter ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.aligncenter li {
+  float: right;
+}
+
+.aligncenter li a {
+  display: block;
+  color: rgb(82, 82, 82);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.aligncenter li a:hover {
+  background-color: #2E3192;
+  color: #ffffff;
+}
+
+.hero {
+  display: flex;
+  /* border-color: blue;
+  border-style: dotted;
+  border-width: 1px; */
+  width: 100%;
+}
+
+.hero2 {
+  width: 100%;
+}
+
+#maincontent {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  width: 55%;
+  padding: 10px;
+  color: #2E3192;
+}
+
+.skills {
+  width: 100%;
+}
+
+.footer {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2E3192;
+  color: #fff;
+  padding: 30px;
+  border-radius: 17px 17px 0px 0px;
+}
+
+/*  Buttons code starts*/
+.button {
+
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.button_primary {
+  background-color: #2E3192;
+  /* Blue */
+  border: none;
+  color: white;
+}
+
+.button_secondary {
+  background-color: #00A651;
+  /* Green */
+  border: none;
+  color: white;
+}
+
+.button_tertiary {
+  background-color: #F15A29;
+  /* Red */
+  border: none;
+  color: white;
+}
+
+.button_disabled {
+  background-color: #E2E2E2;
+  /* Disabled */
+  border: none;
+  color: white;
+}
+
+/*  Buttons code ends*/
+/*  Case Study starts*/
+.Flex_frame {
+  margin: 5px;
+  display: flex;
+  background-color: #ffffff;
+  border: #00A651;
+}
+
+.Flex_frame h1 {
+  color: #00A651;
+  /* Green */
+}
+
+#Case_study_brief {
+  width: 55%;
+  background-color: #2E3192;
+  /* Blue */
+  padding: 10px;
+  border-radius: 17px 0px 0px 17px;
+}
+
+#Case_study_brief h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  color: ;
+  #2E3192;
+  /* Blue */
+}
+
+#Case_study_brief .text {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  padding-top: 20%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+#Case_study_brief_Tmbnail {
+  flex: 45%;
+  background-color: #ffffff;
+}
+
+#blueright {
+  margin: 0;
+  top: 90%;
+  left: 50%;
+  width: 10%;
+  background-color: #2E3192;
+  /* Blue */
+  border-radius: 0px 17px 17px 0px;
+}
+
+.viewall {
+  text-align: center;
+
+}
+
+/*  Case Study starts*/
+
+.clientspeaks {
+  border-radius: 12px;
+  border-style: dashed;
+  border-width: 1px;
+  display: flexbox;
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #B6B6B6;
+}
+
+.client_name {
+  color: #F15A29;
+  text-align: left;
+  width: 50%;
+  display: block;
+  position: relative;
+
+}
+
+.linespacing {
+  padding-left: 50%;
+}
+
+a:hover {
+  color: #F15A29;
+  text-decoration-style: dotted;
+}
+
+a:link {
+  color: white;
+  text-decoration-style: dotted;
+
+}
+
+a:visited {
+  color: white;
+  text-decoration-style: dotted;
+}
+
+/****** GRID STARTS HERE ******/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  /*border-style: dashed;
+  border-width: 1px;*/
+  grid-gap: .3em;
+}
+
+.grid-container>div {
+  /*background:gray;*/
+  text-align: center;
+}
+
+/* .grid-container > div:nth-child(odd){
+ background:#B6B6B6;
+}*/
+.logo {
+  grid-column: 1;
+  grid-column: 1/3;
+}
+
+.nav {
+
+  grid-column: 3/14;
+  grid-row: 1;
+}
+
+.hero {
+  grid-column: 1/14;
+  grid-row: 2;
+  background-image: ;
+}
+
+.card1 {
+  grid-row: 3;
+  grid-column: 1/5;
+}
+
+.card2 {
+  grid-row: 3;
+  grid-column: 5/9;
+
+}
+
+.card3 {
+  grid-row: 3;
+  grid-column: 9/14;
+
+}
+
+.work {
+  grid-column: 1/14;
+  font-size: 30px;
+  padding-top: 60px;
+  text-align: left !important;
+  border-bottom: 1px dashed gray;
+}
+
+.pfimg {
+  grid-row: 5;
+  grid-column: 1/6;
+
+}
+
+.pfcontent {
+  grid-row: 5;
+  grid-column: 7/14;
+  text-align: left !important;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.pfimg1 {
+  grid-row: 6;
+  grid-column: 7/14;
+
+}
+
+.pfcontent1 {
+  grid-row: 6;
+  grid-column: 2/8;
+  text-align: left !important;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.pfimg2 {
+  grid-row: 7;
+  grid-column: 1/6;
+
+}
+
+.pfcontent2 {
+  grid-row: 7;
+  grid-column: 7/14;
+  text-align: left !important;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.projname {
+  font-weight: bold;
+}
+
+.footer-grid {
+  grid-row: 8;
+  grid-column: 1/14;
+}
+
+/*  Grid Code ends */
+.CardBlock {
+  Display: flex-direction;
+  flex-direction: row;
+}
+
+.textCS {
+  padding: 30px;
+  color: white;
+  font-size: 25px;
+}
+
+.CardBlock .image,
+.text {
+  border: 1px solid gray;
+}
+
+.CardBlock .header {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.CardBlock .headerlt {
+  border-radius: 20px 0px 0px 0px;
+  background-color: #507EC2;
+}
+
+.CardBlock .headermd {
+  border-radius: 0px 0px 0px 0px;
+  background-color: #EE5F5F;
+}
+
+.CardBlock .headerrt {
+  border-radius: 0px 20px 0px 0px;
+  background-color: #D08731;
+}
+
+.CardBlock .text {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  height: 200px;
+}
+
+.CardBlock .textlt {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.CardBlock .textmid {
+  border-radius: 0px 0px 0px 0px;
+}
+
+.CardBlock .textrt {
+  border-radius: 0px 0px 20px 0px;
+}
+
+.CardBlock .tmb {
+  padding: 30px;
+  width: 30%;
+}
+
+.Skilframe {
+  display: flex;
+  padding-left: 20px;
+}
+
+.skills {
+  color: #2E3192;
+  font-size: 15px;
+  text-align: left;
+  flex: 1;
+  padding: 7px;
+
+}
+
+.skills ul {
+  padding: 0px;
+
+}
+
+.skills li {
+
+  list-style-type: circle;
+}
